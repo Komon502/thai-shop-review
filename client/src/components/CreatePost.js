@@ -137,44 +137,6 @@ const CreatePost = ({ user }) => {
             />
           </div>
 
-          <div className="location-group">
-            <div className="form-row">
-              <div className="form-group half">
-                <label htmlFor="latitude">ละติจูด:</label>
-                <input
-                  type="number"
-                  id="latitude"
-                  name="latitude"
-                  value={formData.latitude}
-                  onChange={handleChange}
-                  step="any"
-                  placeholder="13.7563"
-                />
-              </div>
-              
-              <div className="form-group half">
-                <label htmlFor="longitude">ลองจิจูด:</label>
-                <input
-                  type="number"
-                  id="longitude"
-                  name="longitude"
-                  value={formData.longitude}
-                  onChange={handleChange}
-                  step="any"
-                  placeholder="100.5018"
-                />
-              </div>
-            </div>
-            
-            <button 
-              type="button" 
-              onClick={getCurrentLocation}
-              className="location-btn"
-            >
-              📍 ใช้ตำแหน่งปัจจุบัน
-            </button>
-          </div>
-
           <div className="form-group">
             <label htmlFor="image">รูปภาพ:</label>
             <input
